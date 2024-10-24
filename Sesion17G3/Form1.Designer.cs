@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             menuStrip1 = new MenuStrip();
             archivoToolStripMenuItem = new ToolStripMenuItem();
             salirToolStripMenuItem = new ToolStripMenuItem();
@@ -64,8 +65,9 @@
             // 
             // salirToolStripMenuItem
             // 
+            salirToolStripMenuItem.Image = (Image)resources.GetObject("salirToolStripMenuItem.Image");
             salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(147, 34);
+            salirToolStripMenuItem.Size = new Size(270, 34);
             salirToolStripMenuItem.Text = "Salir";
             salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
@@ -78,6 +80,7 @@
             // 
             // productosToolStripMenuItem
             // 
+            productosToolStripMenuItem.Image = (Image)resources.GetObject("productosToolStripMenuItem.Image");
             productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             productosToolStripMenuItem.Size = new Size(270, 34);
             productosToolStripMenuItem.Text = "Productos";

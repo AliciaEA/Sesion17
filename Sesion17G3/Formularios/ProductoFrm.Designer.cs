@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductoFrm));
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             groupBox1 = new GroupBox();
             TbPrecio = new TextBox();
             TbDescripcion = new TextBox();
@@ -195,9 +195,9 @@
             DgvRegistros.AllowUserToAddRows = false;
             DgvRegistros.AllowUserToDeleteRows = false;
             DgvRegistros.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(192, 255, 192);
-            dataGridViewCellStyle1.Font = new Font("Tahoma", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            DgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(192, 255, 192);
+            dataGridViewCellStyle2.Font = new Font("Tahoma", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            DgvRegistros.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             DgvRegistros.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             DgvRegistros.Dock = DockStyle.Fill;
             DgvRegistros.Location = new Point(3, 35);
@@ -211,21 +211,25 @@
             // 
             // btnGuardarArchivo
             // 
+            btnGuardarArchivo.Image = (Image)resources.GetObject("btnGuardarArchivo.Image");
             btnGuardarArchivo.Location = new Point(760, 167);
             btnGuardarArchivo.Name = "btnGuardarArchivo";
-            btnGuardarArchivo.Size = new Size(247, 61);
+            btnGuardarArchivo.Size = new Size(247, 68);
             btnGuardarArchivo.TabIndex = 3;
             btnGuardarArchivo.Text = "Guardar Archivo";
+            btnGuardarArchivo.TextImageRelation = TextImageRelation.ImageAboveText;
             btnGuardarArchivo.UseVisualStyleBackColor = true;
             btnGuardarArchivo.Click += btnGuardarArchivo_Click;
             // 
             // btnAbrirArchivo
             // 
+            btnAbrirArchivo.Image = (Image)resources.GetObject("btnAbrirArchivo.Image");
             btnAbrirArchivo.Location = new Point(760, 260);
             btnAbrirArchivo.Name = "btnAbrirArchivo";
-            btnAbrirArchivo.Size = new Size(247, 58);
+            btnAbrirArchivo.Size = new Size(247, 96);
             btnAbrirArchivo.TabIndex = 4;
             btnAbrirArchivo.Text = "Abrir Archivo";
+            btnAbrirArchivo.TextImageRelation = TextImageRelation.ImageAboveText;
             btnAbrirArchivo.UseVisualStyleBackColor = true;
             btnAbrirArchivo.Click += btnAbrirArchivo_Click;
             // 

@@ -82,7 +82,7 @@
             // 
             productosToolStripMenuItem.Image = (Image)resources.GetObject("productosToolStripMenuItem.Image");
             productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            productosToolStripMenuItem.Size = new Size(270, 34);
+            productosToolStripMenuItem.Size = new Size(195, 34);
             productosToolStripMenuItem.Text = "Productos";
             productosToolStripMenuItem.Click += productosToolStripMenuItem_Click;
             // 
@@ -121,7 +121,7 @@
             IsMdiContainer = true;
             Margin = new Padding(4);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Productos";
             WindowState = FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
